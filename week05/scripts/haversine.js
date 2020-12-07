@@ -10,7 +10,7 @@ function haversine(lat1, lon1, lat2, lon 2){
     let d = R * c;
 
     return roundVal(d);
-    
+
 }
 
 if (typeof Number.prototype.toRad == "undefined") {
@@ -46,7 +46,7 @@ elLocate.addEventListener("click",function () {
             let userLat = position.coords.latitude;
             let userLong= position.coords.longtitude;
 
-            let distances = calculateDistances (userLat, UserLong);
+            let distances = calculateDistances (userLat, userLong);
 
 
 
