@@ -44,14 +44,14 @@ elLocate.addEventListener("click",function () {
             let elKlcc = document.getElementById("klcc");
 
             let userLat = position.coords.latitude;
-            let userLong= position.coords.longtitude;
+            let userLon= position.coords.longtitude;
 
-            let distances = calculateDistances (userLat, userLong);
+            let distances = calculateDistances (userLat, userLon);
 
 
 
             elLat.innerHtml = "Your latitute :" + userLat;
-            elLong.innerHTML = "Your longtitude :" + userLong;
+            elLong.innerHTML = "Your longtitude :" + userLon;
             elDepulze.innerHTML = "Distance to De Pulze, CJ is " + distances[0];
             elSunway.innerHTML = "Distance to Sunway Pyramid is  " + distances[1];
             elKlcc.innerHTML = "Distance to KLCC is " + distances[2];
