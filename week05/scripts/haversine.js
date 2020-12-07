@@ -44,7 +44,7 @@ elLocate.addEventListener("click",function () {
             let elKlcc = document.getElementById("klcc");
 
             let userLat = position.coords.latitude;
-            let userLong= position.coords.longtitude;
+            let userLong= position.coords.longitude;
 
             let distances = calculateDistances (userLat, userLong);
 
