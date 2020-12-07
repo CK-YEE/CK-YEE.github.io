@@ -50,7 +50,7 @@ elLocate.addEventListener("click",function () {
 
 
 
-            elLat.innerHtml = "Your latitute :" + userLat;
+            elLat.innerHTML = "Your latitute :" + userLat;
             elLong.innerHTML = "Your longtitude :" + userLong;
             elDepulze.innerHTML = "Distance to De Pulze, CJ is " + distances[0];
             elSunway.innerHTML = "Distance to Sunway Pyramid is  " + distances[1];
