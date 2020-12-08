@@ -9,5 +9,9 @@ window.onload = function(){
     let pauseBtn = document.getElementById("pauseBtn");
     pauseBtn.addEventListener("click",function(){
         video.pause();
-    })
+    });
+
+
+
+    
 };
