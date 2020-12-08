@@ -7,15 +7,15 @@ window.onload = function(){
     });
 
     let pauseBtn = document.getElementById("pauseBtn");
-    pauseBtn.addEventListener("click",function(){
+    pauseBtn.addEventListener("click",function (){
         video.pause();
     });
 
     let freezeBtn = document.getElementById("freezeBtn");
-    freezeBtn.addEventListener("mousedown", function(){
+    freezeBtn.addEventListener("mousedown", function (){
         video.pause();
     });
-    freezeBtn.addEventListener("mouseup", function(){
+    freezeBtn.addEventListener("mouseup", function (){
         video.play();
     });
 };
