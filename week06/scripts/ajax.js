@@ -15,7 +15,7 @@ function getRandomUser(){
 
             elFirstName.innerHTML = data.results[0].name.first;
             elLastName.innerText = data.results[0].name.last;
-            elUserImage.src = data.result[0].picture.large;
+            elUserImage.src = data.results[0].picture.large;
             elUserImage.title = data.results[0].name.first + " " + data.results[0].name.last;
 
 
