@@ -9,7 +9,7 @@ function getRandomUser(){
             let elLastName = document.getElementById("lastName");
             let elJsonResult = document.getElementById("jsonResult");
             let elUserImage = document.getElementById("userImage");
-            let elPhone = document.getElementById("aphone");
+            let elPhone = document.getElementById("phone");
             let elAddress = document.getElementById("address");
             let elEmail = document.getElementById("email");
 
