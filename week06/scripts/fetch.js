@@ -40,7 +40,10 @@ function BookNow(guestName, guestEmail, guestPax) {
     }
     fetch(url, {
         method: 'POST',
-        body: JSON.stringify(body)
+        body: JSON.stringify(body),
+        headers: {
+            "Content-Type": "application/json"
+        }
     })
         .then((response) => response.json())
         .then(json => {
@@ -54,9 +57,9 @@ function BookNow(guestName, guestEmail, guestPax) {
 
 let bookNow = document.getElementById("bookNow");
 bookNow.addEventListener("click", function () {
-    let gName = document.getElementByid("guestName").value;
-    let gEmail = document.getElementByid("guestEmail").value;
-    let gPax = document.getElementByid("guestPax").value;
+    let gName = document.getElementById("guestName").value;
+    let gEmail = document.getElementById("guestEmail").value;
+    let gPax = document.getElementById("guestPax").value;
 
     BookNow(gName, gEmail, gPax);
 });
