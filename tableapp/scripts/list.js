@@ -6,7 +6,7 @@ function GetBookings() {
             // Do something with the data
             //console.log(json.bookings);
             let bookingList = document.getElementById("booking-list");
-            letbookingIds = [];
+            let bookingIds = [];
 
             //clear the table rows
             for (let k = bookingList.rows.length - 1; k > 0; k--) {
