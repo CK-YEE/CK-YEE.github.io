@@ -30,4 +30,4 @@ window.addEventListener("load", function () {
 
         BookNow(userName, userEmail, userPax, userRemarks);
     });
-})
+});
