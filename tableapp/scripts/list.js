@@ -22,7 +22,8 @@ function GetBookings() {
                 row.insertCell(2).innerHTML = gEmail;
                 row.insertCell(3).innerHTML = gPax;
                 row.insertCell(4).innerHTML = gRemarks;
-                row.insertCell(5).innerHTML = "<button id='" + buttonId + "' class='btn btn-danger'>Delete</button>";
+                row.insertCell(5).innerHTML = "<button id='" +
+                    buttonId + "' class='btn btn-danger'>Delete</button>";
 
                 bookingIds.push(buttonId);
 
