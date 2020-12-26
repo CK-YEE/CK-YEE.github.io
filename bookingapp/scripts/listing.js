@@ -22,6 +22,7 @@ function GetBookings() {
                 let gPostcode = json.bookings[i].postcode;
                 let gDate = json.bookings[i].date;
                 let gTime = json.bookings[i].time;
+                let gId = json.bookings[i].id;
                 let gRemarks = json.bookings[i].remarks;
                 let buttonId = "delete" + gId;
 
