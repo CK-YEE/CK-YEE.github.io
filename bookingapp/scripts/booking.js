@@ -25,9 +25,14 @@ window.addEventListener("load", function () {
     document.getElementById("bookNow").addEventListener("click", function () {
         let userName = document.getElementById("userName").value;
         let userEmail = document.getElementById("userEmail").value;
-        let userPax = document.getElementById("userPax").value;
+        let userPhone = document.getElementById("userPhone").value;
+        let userCity = document.getElementById("userCity").value;
+        let userState = document.getElementById("userState").value;
+        let userPostcode = document.getElementById("userPostcode").value;
+        let userDate = document.getElementById("userDate").value;
+        let userTime = document.getElementById("userTime").value;
         let userRemarks = document.getElementById("userRemarks").value;
 
-        BookNow(userName, userEmail, userPax, userRemarks);
+        BookNow(userName, userEmail, userPhone, userCity, userState, userPostcode, userDate, userTime, userRemarks);
     });
 });
