@@ -62,28 +62,52 @@
                     <input type="text" class="form-control" id="userEmail">
                 </div>
                 <div class="form-group">
-                    <label for="userPax">Pax</label>
-                    <select class="form-control" id="userPax">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                    </select>
+                    <label for="userPhone">Phone Number</label>
+                    <input type="text" class="form-control" id="userPhone">
                 </div>
                 <div class="form-group">
-                    <label for="userRemarks">Remarks</label>
-                    <textarea class="form-control" id="userRemarks" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" id="bookNow">Submit</button>
 
+                    <label for="validationTooltip03">City</label>
+                    <input type="text" class="form-control" id="validationTooltip03" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid city.
+                    </div>
+
+                    <div class="form-group">
+                        <label for="validationTooltip04">State</label>
+                        <select class="custom-select" id="validationTooltip04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                        <div class="invalid-tooltip">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="validationTooltip05">Zip</label>
+                        <input type="text" class="form-control" id="validationTooltip05" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div class="form-group"></div>
+                    <label for="userDate">Booking Date</label>
+                    <input type="date" class="form-control" id="userDate">
+                </div>
+
+                <div class="form-group"></div>
+                <label for="userTime">Booking Time</label>
+                <input type="time" class="form-control" id="userTime" min="09:00" max="18:00" required>
             </div>
+
+            <div class="form-group">
+                <label for="userRemarks">Remarks</label>
+                <textarea class="form-control" id="userRemarks" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="bookNow">Submit</button>
+
         </div>
+    </div>
 
 
     </div>
