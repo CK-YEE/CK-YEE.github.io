@@ -16,8 +16,12 @@ function GetBookings() {
             for (let i = 0; i < json.bookings.length; i++) {
                 let gName = json.bookings[i].name;
                 let gEmail = json.bookings[i].email;
-                let gPax = json.bookings[i].pax;
-                let gId = json.bookings[i].id;
+                let gPhoneNumber = json.bookings[i].phone;
+                let gCity = json.bookings[i].city;
+                let gState = json.bookings[i].state;
+                let gPostcode = json.bookings[i].postcode;
+                let gDate = json.bookings[i].date;
+                let gTime = json.bookings[i].time;
                 let gRemarks = json.bookings[i].remarks;
                 let buttonId = "delete" + gId;
 
@@ -25,9 +29,14 @@ function GetBookings() {
                 row.insertCell(0).innerHTML = gId;
                 row.insertCell(1).innerHTML = gName;
                 row.insertCell(2).innerHTML = gEmail;
-                row.insertCell(3).innerHTML = gPax;
-                row.insertCell(4).innerHTML = gRemarks;
-                row.insertCell(5).innerHTML = "<button id='" +
+                row.insertCell(3).innerHTML = gPhoneNumber;
+                row.insertCell(4).innerHTML = gCity;
+                row.insertCell(5).innerHTML = gState;
+                row.insertCell(6).innerHTML = gPostcode;
+                row.insertCell(7).innerHTML = gDate;
+                row.insertCell(8).innerHTML = gTime;
+                row.insertCell(9).innerHTML = gRemarks;
+                row.insertCell(10).innerHTML = "<button id='" +
                     buttonId + "' class='btn btn-danger'>Delete</button>";
 
                 bookingIds.push(buttonId);
