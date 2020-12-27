@@ -47,7 +47,7 @@
         </div>
 
         <a href="https://i.ibb.co/DYXJbTm/cleaner.jpg"><img src="https://i.ibb.co/DYXJbTm/cleaner.jpg" alt="cleaner"
-                width="100%" height="80%"></a>
+                width="100%" height="auto"></a>
 
         <!-- Jumbotron -->
         <div class="row">
@@ -75,63 +75,65 @@
                     <input type="text" class="form-control" id="userPhone">
                 </div>
                 <div class="form">
+                    <label for="userAddress">City</label>
+                    <input type="text" class="form-control" id="userAddress" required>
+                </div>
+                <div class="form">
                     <label for="userCity">City</label>
                     <input type="text" class="form-control" id="userCity" required>
-                    <div class="invalid-tooltip">
-                        Please provide a valid city.
-                    </div>
-                    <div class="form">
-                        <label for="userState">State</label>
-                        <select class="custom-select" id="userState" required>
-                            <option selected disabled value="">Choose...</option>
-                            <option>Johor</option>
-                            <option>Kedah</option>
-                            <option>Kelantan</option>
-                            <option>Malacca</option>
-                            <option>Negeri Sembilan</option>
-                            <option>Penang</option>
-                            <option>Perak</option>
-                            <option>Perlis</option>
-                            <option>Sabah</option>
-                            <option>Sarawak</option>
-                            <option>Selangor</option>
-                            <option>Terengganu</option>
-                            <option>Kuala Lumpur</option>
-                            <option>Labuan</option>
-                            <option>Putrajaya</option>
-                        </select>
-                    </div>
-                    <div class="form">
-                        <label for="userPostcode">Postcode</label>
-                        <input type="text" class="form-control" id="userPostcode" required>
-                    </div>
-                    <div class="form">
-                        <label for="userDate">Booking Date</label>
-                        <input type="date" class="form-control" id="userDate">
-                    </div>
-                    <div class="form">
-                        <label for="userTime">Booking Time</label>
-                        <input type="time" class="form-control" id="userTime" min="09:00" max="18:00" required>
-                    </div>
-                    <div class="form">
-                        <label for="userRemarks">Remarks</label>
-                        <textarea class="form-control" id="userRemarks" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="bookNow">Submit</button>
-
                 </div>
+                <div class="form">
+                    <label for="userState">State</label>
+                    <select class="custom-select" id="userState" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>Johor</option>
+                        <option>Kedah</option>
+                        <option>Kelantan</option>
+                        <option>Malacca</option>
+                        <option>Negeri Sembilan</option>
+                        <option>Penang</option>
+                        <option>Perak</option>
+                        <option>Perlis</option>
+                        <option>Sabah</option>
+                        <option>Sarawak</option>
+                        <option>Selangor</option>
+                        <option>Terengganu</option>
+                        <option>Kuala Lumpur</option>
+                        <option>Labuan</option>
+                        <option>Putrajaya</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label for="userPostcode">Postcode</label>
+                    <input type="text" class="form-control" id="userPostcode" required>
+                </div>
+                <div class="form">
+                    <label for="userDate">Booking Date</label>
+                    <input type="date" class="form-control" id="userDate">
+                </div>
+                <div class="form">
+                    <label for="userTime">Booking Time</label>
+                    <input type="time" class="form-control" id="userTime" min="09:00" max="18:00" required>
+                </div>
+                <div class="form">
+                    <label for="userRemarks">Remarks</label>
+                    <textarea class="form-control" id="userRemarks" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="bookNow">Submit</button>
+
             </div>
-
-
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"></script>
-        <script src="scripts/booking.js"></script>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="scripts/booking.js"></script>
 </body>
 
 </html>

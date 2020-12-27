@@ -1,10 +1,11 @@
-function BookNow(guestName, guestEmail, guestPhone, guestCity, guestState, guestPostcode, guestDate, guestTime, guestRemarks) {
+function BookNow(guestName, guestEmail, guestPhone, guestAddress, guestCity, guestState, guestPostcode, guestDate, guestTime, guestRemarks) {
     let url = 'https://api.sheety.co/7fe143c5313620abca554c156af3ebf6/bookingApp/bookings';
     let body = {
         booking: {
             name: guestName,
             email: guestEmail,
             phone: guestPhone,
+            address: guestAddress,
             city: guestCity,
             state: guestState,
             postcode: guestPostcode,
@@ -31,6 +32,7 @@ window.addEventListener("load", function () {
         let userName = document.getElementById("userName").value;
         let userEmail = document.getElementById("userEmail").value;
         let userPhone = document.getElementById("userPhone").value;
+        let userAddress = document.getElementById("userAddress").value;
         let userCity = document.getElementById("userCity").value;
         let userState = document.getElementById("userState").value;
         let userPostcode = document.getElementById("userPostcode").value;
@@ -38,6 +40,6 @@ window.addEventListener("load", function () {
         let userTime = document.getElementById("userTime").value;
         let userRemarks = document.getElementById("userRemarks").value;
 
-        BookNow(userName, userEmail, userPhone, userCity, userState, userPostcode, userDate, userTime, userRemarks);
+        BookNow(userName, userEmail, userPhone, userAddress, userCity, userState, userPostcode, userDate, userTime, userRemarks);
     });
 });
