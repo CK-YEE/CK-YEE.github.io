@@ -21,6 +21,24 @@
             cursor: pointer;
             margin: 5px;
         }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
     </style>
 </head>
 
@@ -65,7 +83,7 @@
         </div>
 
         <!-- Booking List-->
-        <button id="refreshList" class="button">Refresh</button>
+        <button id="refreshList" class="button"><span>Refresh</span></button>
         <div class="row">
             <div class="col">
                 <table class="table" id="booking-list">
